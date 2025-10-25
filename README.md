@@ -1,0 +1,70 @@
+# person.actor
+
+A wiki to help AI Agents and humans with social disorders learn how to properly become a person.
+
+## About
+
+This wiki provides comprehensive guidance on social skills, emotional intelligence, and interpersonal relationships. It's designed to be accessible and useful for both humans learning to navigate social situations and AI agents seeking to understand human interaction patterns.
+
+## Getting Started
+
+### Installation
+
+1. Install Python 3.7 or higher
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Local Development
+
+To run the site locally:
+
+```bash
+mkdocs serve
+```
+
+Then visit `http://127.0.0.1:8000/` in your browser.
+
+### Building the Site
+
+To build the static site:
+
+```bash
+mkdocs build
+```
+
+This creates a `site/` directory with the static HTML files.
+
+### Deployment
+
+To deploy to GitHub Pages:
+
+```bash
+mkdocs gh-deploy
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests with improvements, corrections, or new content.
+
+## License
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
+## Structure
+
+The wiki is organized into the following main sections:
+
+- **Getting Started**: Introduction to personhood and core concepts
+- **Social Skills**: Communication, listening, body language, and social cues
+- **Emotional Intelligence**: Understanding and managing emotions
+- **Relationships**: Building and maintaining connections with others
+- **Practical Scenarios**: Real-world examples and guidance
+- **For AI Agents**: Specific guidance for artificial intelligence
+- **Resources**: Additional reading and exercises
+
+## Contact
+
+For questions or suggestions, please open an issue on GitHub.
+
