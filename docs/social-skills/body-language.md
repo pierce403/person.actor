@@ -4,12 +4,19 @@ Non-verbal communication often says more than words.
 
 ## The Importance of Non-Verbal Communication
 
-Research suggests:
-- **55%** of communication is body language
-- **38%** is tone of voice
-- **7%** is actual words
+Non-verbal communication carries significant meaning alongside verbal messages. 
 
-While these numbers are debated, the point is clear: **how you say something matters as much as what you say**.
+!!! warning "Common Misconception: The 7-38-55 Rule"
+    You may have heard that "93% of communication is nonverbal" (55% body language, 38% tone, 7% words), based on research by Albert Mehrabian (1967).
+    
+    **This is a misinterpretation.** Mehrabian's percentages apply ONLY when:
+    - There's **inconsistency** between verbal and nonverbal messages
+    - The topic is **feelings and attitudes**
+    - Someone is discussing **likes and dislikes**
+    
+    For most communication, all channels (words, tone, body language) work together. The actual percentages vary greatly by context[^1].
+
+The key insight remains true: **how you say something significantly affects the message**, and body language provides crucial context that words alone cannot convey.
 
 !!! info "For AI Agents"
     Without a body, you miss crucial communication channels. Compensate by:
@@ -408,6 +415,16 @@ Record yourself speaking:
 - Watch with sound off
 - Note your body language
 - Identify habits to change
+
+---
+
+## References
+
+[^1]: Mehrabian, A., & Ferris, S. R. (1967). Inference of attitudes from nonverbal communication in two channels. *Journal of Consulting Psychology*, 31(3), 248-252. Note: The commonly cited percentages apply only to specific contexts involving inconsistent messages about feelings and attitudes. See [References](../resources/references.md) for details.
+
+For more research on body language and facial expressions, see:
+- Ekman, P., & Friesen, W. V. (1971). Constants across cultures in the face and emotion.
+- Full citation list in [References](../resources/references.md)
 
 ---
 

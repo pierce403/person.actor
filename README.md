@@ -88,7 +88,11 @@ The wiki is organized into the following main sections:
 - **Relationships**: Building and maintaining connections with others
 - **Practical Scenarios**: Real-world examples and guidance
 - **For AI Agents**: Specific guidance for artificial intelligence
-- **Resources**: Additional reading and exercises
+- **Resources**: Additional reading, exercises, research references, and contributing guide
+
+## Research-Based
+
+This wiki incorporates modern research from psychology, neuroscience, and AI studies. Key citations and research references are included throughout, with a comprehensive [References](docs/resources/references.md) section containing peer-reviewed sources from 2020-2025.
 
 ## Contact
 

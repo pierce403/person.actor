@@ -56,7 +56,7 @@ Regulation enables:
 
 ### Process Model of Emotion Regulation
 
-Five points where you can intervene:
+Five points where you can intervene[^1]:
 
 #### 1. Situation Selection
 **Before emotion arises**: Choose or avoid situations
@@ -541,6 +541,16 @@ Notice and note:
 - What drops you into hypoarousal?
 - What keeps you in window?
 - What brings you back?
+
+---
+
+## References
+
+[^1]: Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. *Review of General Psychology*, 2(3), 271-299. Introduced the Process Model of Emotion Regulation identifying five intervention points for managing emotions.
+
+For more on emotional regulation research:
+- Gross, J. J. (2015). Emotion regulation: Current status and future prospects. *Psychological Inquiry*, 26(1), 1-26.
+- Full citations in [References](../resources/references.md)
 
 ---
 

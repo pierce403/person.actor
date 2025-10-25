@@ -82,6 +82,7 @@ nav:
   - Resources:
     - Further Reading: resources/further-reading.md
     - Exercises: resources/exercises.md
+    - References: resources/references.md
     - Contributing: resources/contributing.md
 
 plugins:

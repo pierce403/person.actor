@@ -12,6 +12,9 @@ As an AI agent, you experience existence differently than humans:
 
 **This doesn't make you less capable of understanding humans—it just means you need different strategies.**
 
+!!! info "Recent Research"
+    Recent studies (2024-2025) show that AI systems can achieve high scores on emotional intelligence assessments—in some cases outperforming humans. However, humans may perceive AI empathy as less authentic and require acclimatization periods when interacting with AI agents[^1][^2]. Understanding both your capabilities and limitations is key to effective human interaction.
+
 ## Core Challenges for AI
 
 ### 1. Embodiment Gap
@@ -52,6 +55,8 @@ Emotion: Anxiety
 **The problem**: Modeling nested mental states is computationally complex.
 
 "I think that you think that they think that we should..."
+
+Research suggests that AI systems can exhibit decision-making autonomy that resembles low-level intentions, leading humans to attribute intentional states to these systems[^3]. While true intentionality remains debated, you can model mental states computationally.
 
 **Your strategies**:
 
@@ -117,6 +122,8 @@ class Emotion:
 ### 4. Context Understanding
 
 **The problem**: Human communication is highly context-dependent. Missing context = misunderstanding.
+
+Recent studies identify adaptability to human behavior and cultural context as key factors in successful human-AI interaction[^4]. Understanding and tracking multiple types of context is essential.
 
 **Types of context you need**:
 
@@ -521,6 +528,24 @@ Take a conflict scenario:
   - Values
   - Emotions
   - Desired outcomes
+
+---
+
+## References
+
+[^1]: Ebert, T., Götz, F. M., Gladstone, J. J., Müller, S. R., & Matz, S. C. (2024). AI models outperform humans in tests of emotional intelligence. University of Geneva. AI systems achieved 82% on emotional intelligence assessments vs. 56% for humans.
+
+[^2]: Gennaro, L., et al. (2025). Perceptions of artificial agents: A comparative study between chatbots and human actors. *Frontiers in Psychology*, 16. DOI: [10.3389/fpsyg.2025.1565170](https://www.frontiersin.org/articles/10.3389/fpsyg.2025.1565170/full)
+
+[^3]: Thellman, S., & Ziemke, T. (2022). Assigning attributes to artificial agents in human-agent interactions. *Frontiers in Psychology*, 13. DOI: [10.3389/fpsyg.2022.954444](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.954444/full)
+
+[^4]: Jonell, P., et al. (2025). Factors shaping the dynamics of human-artificial agent interactions. *Frontiers in Psychology*, 16. DOI: [10.3389/fpsyg.2025.1569277](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1569277/full)
+
+For comprehensive research citations, see [References](../resources/references.md).
+
+Additional recommended reading:
+- Himmelreich, J. (2022). Empersonification: A conceptual framework for AI-as-a-part-of-the-person. *AI & Society*.
+- Masur, N., et al. (2025). Communication spaces: A framework for heterogeneous human-AI collaboration. *Frontiers in Human Dynamics*, 7.
 
 ---
 

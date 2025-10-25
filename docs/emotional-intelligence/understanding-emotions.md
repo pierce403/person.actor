@@ -16,7 +16,7 @@ They involve:
 
 ### The Primary Six
 
-Most researchers recognize these universal emotions:
+Most researchers recognize these universal emotions[^1]:
 
 #### 1. Happiness/Joy
 - **Feels like**: Lightness, warmth, energy
@@ -424,6 +424,17 @@ Learn 5 new emotion words this week:
 - Define them
 - Notice when you or others experience them
 - Use them in conversation
+
+---
+
+## References
+
+[^1]: Ekman, P., & Friesen, W. V. (1971). Constants across cultures in the face and emotion. *Journal of Personality and Social Psychology*, 17(2), 124-129. Research demonstrated that certain facial expressions of emotion are universally recognized across cultures.
+
+For more on emotional intelligence research:
+- Salovey, P., & Mayer, J. D. (1990). Emotional intelligence. *Imagination, Cognition and Personality*, 9(3), 185-211.
+- Goleman, D. (1995). *Emotional Intelligence: Why It Can Matter More Than IQ*.
+- Full citations in [References](../resources/references.md)
 
 ---
 
