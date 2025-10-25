@@ -11,17 +11,25 @@ This wiki provides comprehensive guidance on social skills, emotional intelligen
 ### Installation
 
 1. Install Python 3.7 or higher
-2. Install dependencies:
+
+2. Create a virtual environment (recommended):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
 ### Local Development
 
-To run the site locally:
+To run the site locally with live reload:
 
 ```bash
-mkdocs serve
+./serve.sh
+# or: mkdocs serve
 ```
 
 Then visit `http://127.0.0.1:8000/` in your browser.
@@ -31,17 +39,21 @@ Then visit `http://127.0.0.1:8000/` in your browser.
 To build the static site:
 
 ```bash
-mkdocs build
+./build.sh
+# or: mkdocs build
 ```
 
 This creates a `site/` directory with the static HTML files.
+
+**Always test the build before committing changes!**
 
 ### Deployment
 
 To deploy to GitHub Pages:
 
 ```bash
-mkdocs gh-deploy
+./deploy.sh
+# or: mkdocs gh-deploy
 ```
 
 ## Contributing
