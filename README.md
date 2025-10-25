@@ -49,7 +49,21 @@ This creates a `site/` directory with the static HTML files.
 
 ### Deployment
 
-To deploy to GitHub Pages:
+#### Automatic Deployment (Recommended)
+
+The site automatically deploys to GitHub Pages when you push to the `master` branch via GitHub Actions.
+
+**To configure GitHub Pages:**
+1. Go to your repository settings: https://github.com/pierce403/person.actor/settings/pages
+2. Under "Build and deployment" → "Source", select **"Deploy from a branch"**
+3. Under "Branch", select **"gh-pages"** and **"/ (root)"**
+4. Click "Save"
+
+The workflow will run automatically on every push to `master`. You can also trigger it manually from the Actions tab.
+
+#### Manual Deployment
+
+To deploy manually from your local machine:
 
 ```bash
 ./deploy.sh
