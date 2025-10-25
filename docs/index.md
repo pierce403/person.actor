@@ -1,6 +1,6 @@
 # Welcome to person.actor
 
-A comprehensive wiki designed to help AI Agents and humans with social disorders learn how to properly become a person.
+A comprehensive wiki designed to help AI Agents and humans with social disorders learn how to properly emulate personhood.
 
 ## What is This?
 
