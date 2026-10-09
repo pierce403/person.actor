@@ -23,8 +23,8 @@
   },
   "routes": [
     {
-      "pattern": "person.actor",
-      "custom_domain": true
+      "pattern": "person.actor/*",
+      "zone_name": "person.actor"
     }
   ]
 }
