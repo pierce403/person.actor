@@ -10,7 +10,7 @@ This wiki provides comprehensive guidance on social skills, emotional intelligen
 
 ### Installation
 
-1. Install Python 3.7 or higher
+1. Install Python 3.12 for the pinned build environment
 
 2. Create a virtual environment (recommended):
    ```bash
@@ -47,28 +47,27 @@ This creates a `site/` directory with the static HTML files.
 
 **Always test the build before committing changes!**
 
-### Deployment
+## Cloudflare publishing
 
-#### Automatic Deployment (Recommended)
+The prepared Worker `person-actor` serves MkDocs output directly through Workers
+Static Assets, including directory URLs, search, and the generated real 404 page.
+Build locally with `npm ci && npm run build`; check packaging with
+`npm run deploy:check`, and preview with `npm run dev`.
+`requirements.lock` pins the renderer verified for this migration while the
+original `requirements.txt` remains available for dependency maintenance.
 
-The site automatically deploys to GitHub Pages when you push to the `master` branch via GitHub Actions.
+Connect `pierce403/person.actor` in Cloudflare Workers Builds with production branch
+`master`, root `/`, build `npm run build`, and deploy `npx wrangler deploy`.
+Use all paths and disable builds for other branches. Cloudflare fetches and
+publishes each production commit using credentials retained in Cloudflare.
+GitHub Actions validates and retains artifacts; it needs no Cloudflare secrets.
+`.nvmrc` and `.python-version` select Node.js 22 and Python 3.12.
 
-**To configure GitHub Pages:**
-1. Go to your repository settings: https://github.com/pierce403/person.actor/settings/pages
-2. Under "Build and deployment" → "Source", select **"Deploy from a branch"**
-3. Under "Branch", select **"gh-pages"** and **"/ (root)"**
-4. Click "Save"
-
-The workflow will run automatically on every push to `master`. You can also trigger it manually from the Actions tab.
-
-#### Manual Deployment
-
-To deploy manually from your local machine:
-
-```bash
-./deploy.sh
-# or: mkdocs gh-deploy
-```
+The configuration initially uses `person-actor.bcrt43.workers.dev`. Attach
+`person.actor` only after its Cloudflare zone/import is verified. Keep `docs/CNAME`
+and the prior `gh-pages` deployment for recovery. Do not overlap manual deployment
+with native Git deployment. Git connection, deployment, domain and DNS verification
+remain separate migration steps recorded in `NOTES.md`.
 
 ## Contributing
 

@@ -259,3 +259,15 @@ Welcome to the journey of understanding personhood. We're glad you're here.
 | Building ongoing relationships | [Building Connections](docs/relationships/building-connections.md) |
 | Digital communication norms | [Digital Communication](docs/scenarios/digital-communication.md) |
 
+
+## Cloudflare publishing operations
+
+- Production branch is `master`. Cloudflare Workers Builds fetches and publishes
+  production commits; GitHub Actions validates without Cloudflare secrets.
+- Use `npm run deploy:check` for the locked strict build and packaging check.
+  Preserve public paths, search, feeds, robots behavior and the prior Pages
+  recovery deployment. Do not overlap native and manual publication.
+- The prepared Worker initially has no custom routes. Verify the Git connection,
+  deployed commit and public serving before the approved domain/DNS cutover.
+- Record checks and unresolved gates in `NOTES.md`; local build success does not
+  prove live hosting or DNS state.

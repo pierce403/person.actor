@@ -1,44 +1,40 @@
-name: Deploy MkDocs to GitHub Pages
+name: Validate MkDocs site
 
 on:
   push:
-    branches:
-      - master  # Deploy when pushing to master branch
-  workflow_dispatch:  # Allow manual triggering
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
+  contents: read
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout full history
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for proper git info
-
+          fetch-depth: 0
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-
-      - name: Cache pip dependencies
-        uses: actions/cache@v3
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Build and deploy to GitHub Pages
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-          mkdocs gh-deploy --force
-
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Install locked deployment tooling
+        run: npm ci
+      - name: Strict build and deployment dry run
+        run: npm run deploy:check
+      - name: Preserve site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: person-actor-site
+          path: site/
