@@ -1,5 +1,9 @@
 # Hosting notes
 
+## 2026-10-13: development dependency alert
+
+Prepared an isolated branch from `master` at `119f06c29c208e0bd00d274e12698573d9f995aa` for Dependabot alert #1, GHSA-wq5f-xc86-pv6w. Wrangler 4.145.0 introduces `sharp` 0.35.4 through Miniflare; a narrow npm override resolves patched `sharp` 0.35.5 without changing Wrangler or the site's hosting configuration. Node 22 clean `npm ci`, `npm ls sharp`, and live `npm audit --audit-level=low` passed with zero findings. Python 3.12 locked strict MkDocs build and Wrangler dry run passed with 118 assets and no bindings. Local Wrangler HTTP checks returned 200 for the homepage, article, and search index (625 entries), and 404 for a missing path. No deployment, DNS, route, or production change was performed. Verify the exact PR CI head before release; prior cutover gates below still apply.
+
 ## 2026-10-09: Cloudflare migration preparation
 
 Refreshed HTTPS origin `pierce403/person.actor` on production `master` at
